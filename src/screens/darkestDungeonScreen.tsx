@@ -1,5 +1,10 @@
 export const DarkestDungeonScreen = () => {
   return (
-    <div>darkestDungeonScreen</div>
+    <section 
+      className="background-image" 
+      style={{backgroundImage: `url(assets/background-img/loading_screen_darknestdungeon.png)`}}
+    >
+      darkestDungeonScreen
+    </section>
   )
 }

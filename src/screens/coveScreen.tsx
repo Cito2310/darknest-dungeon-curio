@@ -1,5 +1,10 @@
 export const CoveScreen = () => {
   return (
-    <div>coveScreen</div>
+    <section 
+      className="background-image" 
+      style={{backgroundImage: `url(assets/background-img/loading_screen_cove.png)`}}
+    >
+      coveScreen
+    </section>
   )
 }

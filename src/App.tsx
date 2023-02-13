@@ -7,6 +7,8 @@ import { WarrensScreen } from "./screens/warrensScreen";
 import { WealdScreen } from "./screens/wealdScreen";
 import { RuinsScreen } from './screens/ruinsScreen';
 
+import "./styles/background-image.scss"
+
 function App() {
   return (
     <div className="App">

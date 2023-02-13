@@ -1,5 +1,10 @@
 export const WealdScreen = () => {
   return (
-    <div>wealdScreen</div>
+    <section 
+      className="background-image" 
+      style={{backgroundImage: `url(assets/background-img/loading_screen_weald.png)`}}
+    >
+      wealdScreen
+    </section>
   )
 }
