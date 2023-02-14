@@ -24,7 +24,7 @@ export const ListGrid = ({ dungeon }: props) => {
             const allCurios = arrayData.reduce(( prev, curr )=> [...prev, ...curr] ,[]);
             setDataCurio( allCurios );
         })
-    }, [])
+    }, [dungeon])
 
     return (
         <section className="list-curio">
