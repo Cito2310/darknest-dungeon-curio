@@ -1,18 +1,28 @@
-.container-action-not-item {
+.container-name-img {
+    position: relative;
+
     .img-curio {
         height: 150px;
         object-fit: contain;
         width: 100%;
     }
 
-    .text-name {
-        font-size: 1.4em;
-        font-weight: 600;
-        text-align: center;
-    }
+    .div-name {
+        background-color: #00000065;
+        border-radius: 8px;
+        bottom: 0%;
+        position: absolute;
+        width: 100%;
 
-    .text-spawn {
-        font-size: 0.9em;
-        text-align: center
+        .text-name {
+            font-size: 1.4em;
+            font-weight: 600;
+            text-align: center;
+        }
+    
+        .text-spawn {
+            font-size: 0.9em;
+            text-align: center
+        }
     }
 }

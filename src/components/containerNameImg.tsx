@@ -10,10 +10,13 @@ interface props {
 
 export const ContainerNameImg = ({ linkImg, name, spawn }: props) => {
   return (
-    <div className="container-action-not-item">
+    <div className="container-name-img">
         <img className="img-curio" src={linkImg}/>
-        <p className="text-name">{ capitalizeText(name) }</p>
-        <p className="text-spawn">{ capitalizeText(spawn) }</p>
+        
+        <div className="div-name">
+          <p className="text-name">{ capitalizeText(name) }</p>
+          <p className="text-spawn">{ capitalizeText(spawn) }</p>
+        </div>
     </div>
   )
 }
