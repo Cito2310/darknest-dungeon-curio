@@ -20,10 +20,6 @@ export const NavBar = () => {
       <NavLink className="nav-button" to="/cove" >
         <div className="nav-button-text">Cove</div>
       </NavLink>
-
-      <NavLink className="nav-button" to="/darkestdungeon" >
-        <div className="nav-button-text">Darkest Dungeon</div>
-      </NavLink>
     </nav>
   )
 }

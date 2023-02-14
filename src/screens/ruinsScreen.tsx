@@ -9,7 +9,9 @@ export const RuinsScreen = () => {
     >
 
       <NavBar/>
-      <ListGrid/>
+      <div className="container-app">
+        <ListGrid/>
+      </div>
 
     </div>
   )

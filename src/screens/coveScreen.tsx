@@ -9,7 +9,10 @@ export const CoveScreen = () => {
     >
 
       <NavBar/>
-      <ListGrid/>
+
+      <div className="container-app">
+        <ListGrid/>
+      </div>
 
     </div>
   )

@@ -9,7 +9,9 @@ export const WealdScreen = () => {
     >
 
       <NavBar/>
-      <ListGrid/>
+      <div className="container-app">
+        <ListGrid/>
+      </div>
 
     </div>
   )
