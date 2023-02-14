@@ -4,6 +4,7 @@ ul {all:unset;}
     display: flex;
     flex-direction: row;
     margin: auto;
+    gap: 1em;
     
     li {
         all: unset;
@@ -19,5 +20,18 @@ ul {all:unset;}
             object-fit: contain;        
         }
 
+        div {
+            display: flex;
+            flex-direction: row;
+            gap: 0.4em;
+
+            img {
+                object-fit: contain;
+            }
+
+            p {
+                margin: auto 0;
+            }
+        }
     }
 }
