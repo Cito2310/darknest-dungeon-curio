@@ -20,7 +20,7 @@ export const ListGrid = () => {
     return (
         <section className="list-curio">
             {
-                dataCurio.map( curio => <div className="item-curio-container">
+                dataCurio.map( (curio, index) => <div key={curio.dungeon+index+curio.name} className="item-curio-container">
                     <ContainerNameImg 
                         linkImg={curio.linkImg}
                         name={curio.name}
