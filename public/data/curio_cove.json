@@ -1,0 +1,103 @@
+[
+    {
+        "name": "barnacle crusted chest",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/cove/barnacle_crusted_chest.png",
+        "action-item": [
+            {"item": "shovel", "effect": "3 loot"}
+        ],
+        "action-not-item": [
+            { "chances": 50, "effect": "2 loot" },
+            { "chances": 25, "effect": "bleed" },
+            { "chances": 25, "effect": "none" }
+        ]
+    },
+    {
+        "name": "bas-relief",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/cove/bas_relief.png",
+        "action-item": [
+            {"item": "shovel", "effect": "+100 stress"}
+        ],
+        "action-not-item": [
+            { "chances": 66.7, "effect": "random positive quirk" },
+            { "chances": 33.3, "effect": "negative negative quirk" }
+        ]
+    },
+    {
+        "name": "brackish tide pool",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/cove/brackish_tidepool.png",
+        "action-item": [
+            {"item": "antivenom", "effect": "+5 HP/-6 stress"}
+        ],
+        "action-not-item": [
+            { "chances": 75, "effect": "TODO" },
+            { "chances": 25, "effect": "random disease" }
+        ]
+    },
+    {
+        "name": "eerie coral",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/cove/eerie_coral.png",
+        "action-item": [
+            {"item": "medicinal herbs", "effect": "delete negative quirk"}
+        ],
+        "action-not-item": [
+            { "chances": 50, "effect": "-10 stress" },
+            { "chances": 25, "effect": "+25 stress" },
+            { "chances": 25, "effect": "none" }
+        ]
+    },
+    {
+        "name": "fish idol",
+        "spawn": "room",
+        "link-img": "assets/curio-img/cove/.png",
+        "action-item": [
+            {"item": "holy water", "effect": "+18 DMG Until Camp"}
+        ],
+        "action-not-item": [
+            { "chances": 50, "effect": "-25% DMG, -10 ACC Until Camp" },
+            { "chances": 50, "effect": "-12% DODGE Until Camp" }
+        ]
+    },
+    {
+        "name": "fish carcass",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/cove/fish_carcass.png",
+        "action-item": [
+            {"item": "medicinal herbs", "effect": "2 gems/trinkets, 1 gems/gold, 2 food"}
+        ],
+        "action-not-item": [
+            { "chances": 16.7, "effect": "1 gem/trinkets, 1 gold/gem, 1 food" },
+            { "chances": 16.7, "effect": "disease: the red plague" },
+            { "chances": 11.1, "effect": "blight" },
+            { "chances": 5.6, "effect": "bleed" },
+            { "chances": 50, "effect": "none" }
+        ]
+    },
+    {
+        "name": "giant oyster",
+        "spawn": "room",
+        "link-img": "assets/curio-img/cove/giant_oyster.png",
+        "action-item": [
+            {"item": "shovel", "effect": "3 gold/trinkets"},
+            {"item": "dog treats", "effect": "+25 DODGE"}
+        ],
+        "action-not-item": [
+            { "chances": 40, "effect": "2 gold/trinkets" },
+            { "chances": 40, "effect": "bleed" },
+            { "chances": 20, "effect": "none" }
+        ]
+    },
+    {
+        "name": "ship's figurehead",
+        "spawn": "room",
+        "link-img": "assets/curio-img/cove/ships_figurehead.png",
+        "action-item": [],
+        "action-not-item": [
+            { "chances": 66.7, "effect": "-[25-30] stress" },
+            { "chances": 33.3, "effect": "+20% DMG, +4 SPD Until Camp" }
+        ]
+    }
+]

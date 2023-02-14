@@ -1,0 +1,145 @@
+[
+    {
+        "name": "alchemy table",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/ruins/alchemy_table.png",
+        "action-item": [
+            {"item": "torch", "effect": "+100 light meter"},
+            {"item": "medicinal herbs", "effect": "2 gold/gems"}
+        ],
+        "action-not-item": [
+            { "chances": 50, "effect": "blight" },
+            { "chances": 25, "effect": "1 gold/gems" },
+            { "chances": 25, "effect": "none" }
+        ]
+    },
+    {
+        "name": "altar of light",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/ruins/altar_of_light.png",
+        "action-item": [
+            {"item": "holy water", "effect": "+30% DMG Until Camp"}
+        ],
+        "action-not-item": [
+            { "chances": 100, "effect": "+20% DMG Until Camp" }
+        ]
+    },
+    {
+        "name": "bookshelf",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/ruins/bookshelf.png",
+        "action-item": [],
+        "action-not-item": [
+            { "chances": 20, "effect": "map" },
+            { "chances": 20, "effect": "+15 stress" },
+            { "chances": 13.3, "effect": "random positive quirk" },
+            { "chances": 6.7, "effect": "random negative quirk" },
+            { "chances": 20, "effect": "1 journal entry" },
+            { "chances": 20, "effect": "none" }
+        ]
+    },
+    {
+        "name": "confession booth",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/ruins/confession_booth.png",
+        "action-item": [
+            {"item": "holy water", "effect": "-30 stress"}
+        ],
+        "action-not-item": [
+            { "chances": 50, "effect": "+15 stress" },
+            { "chances": 25, "effect": "6 gold/trinket, 1 journal entry" },
+            { "chances": 25, "effect": "delete negative quirk" }
+        ]
+    },
+    {
+        "name": "decorative urn",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/ruins/decorative_urn.png",
+        "action-item": [
+            {"item": "holy water", "effect": "2 gems/trinket, 2 gems"},
+            {"item": "shovel", "effect": "negative quirk: guilty conscience"}
+        ],
+        "action-not-item": [
+            { "chances": 44.4, "effect": "1 gems/trinket, 2 gems" },
+            { "chances": 22.2, "effect": "blight" },
+            { "chances": 7.4, "effect": "disease: creeping cough" },
+            { "chances": 3.7, "effect": "random disease" },
+            { "chances": 22.2, "effect": "none" }
+        ]
+    },
+    {
+        "name": "holy fountain",
+        "spawn": "room",
+        "link-img": "assets/curio-img/ruins/holy_fountain.png",
+        "action-item": [
+            {"item": "holy water", "effect": "-20 stress, +12 HP, cure status effects"}
+        ],
+        "action-not-item": [
+            { "chances": 50, "effect": "-10 stress, +5 HP, cure status effects" },
+            { "chances": 50, "effect": "2 gold/gems" }
+        ]
+    },
+    {
+        "name": "iron maiden",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/ruins/iron_maiden.png",
+        "action-item": [
+            {"item": "medicinal herbs", "effect": "2 loot"}
+        ],
+        "action-not-item": [
+            { "chances": 40, "effect": "2 loot" },
+            { "chances": 20, "effect": "claustrophobia" },
+            { "chances": 13.3, "effect": "disease: tetanus" },
+            { "chances": 6.7, "effect": "random disease" },
+            { "chances": 20, "effect": "none" }
+        ]
+    },
+    {
+        "name": "locked display cabinet",
+        "spawn": "corridor",
+        "link-img": "assets/curio-img/ruins/locked_display_cabinet.png",
+        "action-item": [
+            {"item": "skeleton key", "effect": "3 gold/heirlooms, 2 gold/gems"},
+            {"item": "shovel", "effect": "2 gold/heirlooms, 2 gold/gems"}
+        ],
+        "action-not-item": [
+            { "chances": 50, "effect": "bleed" },
+            { "chances": 50, "effect": "blight" }
+        ]
+    },
+    {
+        "name": "locked sarcophagus",
+        "spawn": "room",
+        "link-img": "assets/curio-img/ruins/locked_sarcophagus.png",
+        "action-item": [
+            {"item": "skeleton key", "effect": "2 gold/heirlooms, 1 gold/trinket"},
+            {"item": "shovel", "effect": "1 gold/heirlooms, 1 gold/trinket"}
+        ],
+        "action-not-item": [
+            { "chances": 50, "effect": "bleed" },
+            { "chances": 50, "effect": "blight" }
+        ]
+    },
+    {
+        "name": "sarcophagus",
+        "spawn": "room",
+        "link-img": "assets/curio-img/ruins/sarcophagus.png",
+        "action-item": [],
+        "action-not-item": [
+            { "chances": 60, "effect": "2 gold/heirlooms" },
+            { "chances": 20, "effect": "negative quirk: thanatophobia" },
+            { "chances": 20, "effect": "none" }
+        ]
+    },
+    {
+        "name": "suit of armor",
+        "spawn": "room",
+        "link-img": "assets/curio-img/ruins/suit_of_armor.png",
+        "action-item": [],
+        "action-not-item": [
+            { "chances": 75, "effect": "+15% PROT/+10% DODGE Until Camp" },
+            { "chances": 12.5, "effect": "positive quirk: ruins adventurer" },
+            { "chances": 12.5, "effect": "positive quirk: ruins tactician" }
+        ]
+    }
+]
