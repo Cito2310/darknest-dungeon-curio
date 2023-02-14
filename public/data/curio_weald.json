@@ -1,10 +1,11 @@
 [
     {
+        "dungeon": "weald",
         "name": "ancient coffin",
         "spawn": "room",
-        "link-img": "assets/curio-img/weald/ancient_coffin.png",
-        "action-item": [],
-        "action-not-item": [
+        "linkImg": "assets/curio-img/weald/ancient_coffin.png",
+        "actionItem": [],
+        "actionNotItem": [
             { "chances": 50, "effect": "2 gold/heirloom" },
             { "chances": 8.3, "effect": "positive quirk: weald adventurer" },
             { "chances": 8.3, "effect": "positive quirk: weald explorer" },
@@ -12,13 +13,14 @@
         ]
     },
     {
+        "dungeon": "weald",
         "name": "beast carcass",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/weald/beast_carcass.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/weald/beast_carcass.png",
+        "actionItem": [
             {"item": "medicinal herbs", "effect": "2 food"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 42.9, "effect": "1 food" },
             { "chances": 9.5, "effect": "disease: rabies" },
             { "chances": 19, "effect": "random disease" },
@@ -27,13 +29,14 @@
         ]
     },
     {
+        "dungeon": "weald",
         "name": "eerie spiderweb",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/weald/eerie_spiderweb.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/weald/eerie_spiderweb.png",
+        "actionItem": [
             {"item": "bandages", "effect": "2 gold/gems, 1 gems/trinket"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 40, "effect": "1 gold/gems, 1 gems/trinket" },
             { "chances": 10, "effect": "negative quirk: slow reflexes" },
             { "chances": 10, "effect": "negative quirk: slowdraw" },
@@ -41,73 +44,79 @@
         ]
     },
     {
+        "dungeon": "weald",
         "name": "lost luggage",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/weald/lost_luggage.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/weald/lost_luggage.png",
+        "actionItem": [
             {"item": "skeleton key", "effect": "3 loot"},
             {"item": "antivenom", "effect": "3 loot"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 50, "effect": "4 loot, 1 journal entry" },
             { "chances": 50, "effect": "blight" }
         ]
     },
     {
+        "dungeon": "weald",
         "name": "mummified remains",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/weald/.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/weald/.png",
+        "actionItem": [
             {"item": "bandages", "effect": "2 gold/trinket"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 40, "effect": "1 gold/trinket" },
             { "chances": 40, "effect": "blight" },
             { "chances": 20, "effect": "none" }
         ]
     },
     {
+        "dungeon": "weald",
         "name": "old tree",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/weald/old_tree.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/weald/old_tree.png",
+        "actionItem": [
             {"item": "antivenom", "effect": "3 loot"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 50, "effect": "2 loot" },
             { "chances": 25, "effect": "blight" },
             { "chances": 25, "effect": "none" }
         ]
     },
     {
+        "dungeon": "weald",
         "name": "pristine fountain",
         "spawn": "room",
-        "link-img": "assets/curio-img/weald/pristine_fountain.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/weald/pristine_fountain.png",
+        "actionItem": [
             {"item": "holy water", "effect": "-30 stress"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 100, "effect": "-20 stress" }
         ]
     },
     {
+        "dungeon": "weald",
         "name": "shallow grave",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/weald/shallow_grave.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/weald/shallow_grave.png",
+        "actionItem": [
             {"item": "shovel", "effect": "3 gems/heirlooms"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 50, "effect": "blight" },
             { "chances": 50, "effect": "random disease" }
         ]
     },
     {
+        "dungeon": "weald",
         "name": "traveler's tent",
         "spawn": "room",
-        "link-img": "assets/curio-img/weald/travellers_tent.png",
-        "action-item": [],
-        "action-not-item": [
+        "linkImg": "assets/curio-img/weald/travellers_tent.png",
+        "actionItem": [],
+        "actionNotItem": [
             { "chances": 37.5, "effect": "4 gold/supplies, 4 gold/heirlooms, 1 journal entry" },
             { "chances": 37.5, "effect": "map" },
             { "chances": 12.5, "effect": "+25 stress" },
@@ -115,13 +124,14 @@
         ]
     },
     {
+        "dungeon": "weald",
         "name": "troubling effigy",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/weald/troubling_effigy.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/weald/troubling_effigy.png",
+        "actionItem": [
             {"item": "holy water", "effect": "random positive quirk"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 18.8, "effect": "random positive quirk" },
             { "chances": 18.8, "effect": "random negative quirk" },
             { "chances": 18.8, "effect": "bleed" },

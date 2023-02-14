@@ -1,21 +1,23 @@
 [
     {
+        "dungeon": "warrens",
         "name": "bone altar",
         "spawn": "room",
-        "link-img": "assets/curio-img/warrens/bone_altar.png",
-        "action-item": [],
-        "action-not-item": [
+        "linkImg": "assets/curio-img/warrens/bone_altar.png",
+        "actionItem": [],
+        "actionNotItem": [
             { "chances": 100, "effect": "+15% DMG, +10% ACC, +5% CRT Until Camp" }
         ]
     },
     {
+        "dungeon": "warrens",
         "name": "dinner cart",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/warrens/dinner_cart.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/warrens/dinner_cart.png",
+        "actionItem": [
             {"item": "medicinal herbs", "effect": "3 food, 1 gold/trinket"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 37.5, "effect": "1 food, 1 gold/trinket" },
             { "chances": 25, "effect": "blight" },
             { "chances": 12.5, "effect": "disease: the black plague" },
@@ -23,13 +25,14 @@
         ]
     },
     {
+        "dungeon": "warrens",
         "name": "makeshift dining table",
         "spawn": "room",
-        "link-img": "assets/curio-img/warrens/makeshift_dining_table.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/warrens/makeshift_dining_table.png",
+        "actionItem": [
             {"item": "medicinal herbs", "effect": "2 food, gold/supplies"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 25, "effect": "1 food, 1 gold/supplies" },
             { "chances": 25, "effect": "blight" },
             { "chances": 25, "effect": "disease: tapeworm" },
@@ -37,13 +40,14 @@
         ]
     },
     {
+        "dungeon": "warrens",
         "name": "moonshine barrel",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/warrens/moonshine_barrel.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/warrens/moonshine_barrel.png",
+        "actionItem": [
             {"item": "medicinal herbs", "effect": "+30% DMG Until Camp"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 33.3, "effect": "1 food, 1 gold/supplies" },
             { "chances": 33.3, "effect": "blight" },
             { "chances": 11.1, "effect": "negative quirk: tippler" },
@@ -51,13 +55,14 @@
         ]
     },
     {
+        "dungeon": "warrens",
         "name": "occult scrawlings",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/warrens/occult_scrawlings.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/warrens/occult_scrawlings.png",
+        "actionItem": [
             {"item": "holy water", "effect": "-20% DODGE"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 33.3, "effect": "random positive quirk" },
             { "chances": 25, "effect": "+25 stress" },
             { "chances": 16.7, "effect": "random negative quirk" },
@@ -65,13 +70,14 @@
         ]
     },
     {
+        "dungeon": "warrens",
         "name": "pile of bones",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/warrens/pile_of_bones.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/warrens/pile_of_bones.png",
+        "actionItem": [
             {"item": "holy water", "effect": "2 loot"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 25, "effect": "2 loot" },
             { "chances": 25, "effect": "random disease" },
             { "chances": 25, "effect": "negative quirk: bloodthirsty" },
@@ -79,13 +85,14 @@
         ]
     },
     {
+        "dungeon": "warrens",
         "name": "pile of scrolls",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/warrens/pile_of_scrolls.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/warrens/pile_of_scrolls.png",
+        "actionItem": [
             {"item": "torch", "effect": "delete negative quirk"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 28.6, "effect": "map" },
             { "chances": 14.3, "effect": "+15 stress" },
             { "chances": 14.3, "effect": "journal entry" },
@@ -95,24 +102,26 @@
         ]
     },
     {
+        "dungeon": "warrens",
         "name": "rack of blades",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/warrens/knife_rack.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/warrens/knife_rack.png",
+        "actionItem": [
             {"item": "bandage", "effect": "2 gold/gems, 1 food"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 40, "effect": "1 gold/gems, 1 food" },
             { "chances": 40, "effect": "bleed" },
             { "chances": 20, "effect": "none" }
         ]
     },
     {
+        "dungeon": "warrens",
         "name": "sacrificial stone",
         "spawn": "room",
-        "link-img": "assets/curio-img/warrens/sacrificial_stone.png",
-        "action-item": [],
-        "action-not-item": [
+        "linkImg": "assets/curio-img/warrens/sacrificial_stone.png",
+        "actionItem": [],
+        "actionNotItem": [
             { "chances": 50, "effect": "+50 stress" },
             { "chances": 25, "effect": "delete negative quirk" },
             { "chances": 12.5, "effect": "positive quirk: warrens explorer" },

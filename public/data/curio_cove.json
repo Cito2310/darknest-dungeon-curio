@@ -1,74 +1,80 @@
 [
     {
+        "dungeon": "cove",
         "name": "barnacle crusted chest",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/cove/barnacle_crusted_chest.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/cove/barnacle_crusted_chest.png",
+        "actionItem": [
             {"item": "shovel", "effect": "3 loot"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 50, "effect": "2 loot" },
             { "chances": 25, "effect": "bleed" },
             { "chances": 25, "effect": "none" }
         ]
     },
     {
+        "dungeon": "cove",
         "name": "bas-relief",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/cove/bas_relief.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/cove/bas_relief.png",
+        "actionItem": [
             {"item": "shovel", "effect": "+100 stress"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 66.7, "effect": "random positive quirk" },
             { "chances": 33.3, "effect": "negative negative quirk" }
         ]
     },
     {
+        "dungeon": "cove",
         "name": "brackish tide pool",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/cove/brackish_tidepool.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/cove/brackish_tidepool.png",
+        "actionItem": [
             {"item": "antivenom", "effect": "+5 HP/-6 stress"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 75, "effect": "TODO" },
             { "chances": 25, "effect": "random disease" }
         ]
     },
     {
+        "dungeon": "cove",
         "name": "eerie coral",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/cove/eerie_coral.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/cove/eerie_coral.png",
+        "actionItem": [
             {"item": "medicinal herbs", "effect": "delete negative quirk"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 50, "effect": "-10 stress" },
             { "chances": 25, "effect": "+25 stress" },
             { "chances": 25, "effect": "none" }
         ]
     },
     {
+        "dungeon": "cove",
         "name": "fish idol",
         "spawn": "room",
-        "link-img": "assets/curio-img/cove/.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/cove/.png",
+        "actionItem": [
             {"item": "holy water", "effect": "+18 DMG Until Camp"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 50, "effect": "-25% DMG, -10 ACC Until Camp" },
             { "chances": 50, "effect": "-12% DODGE Until Camp" }
         ]
     },
     {
+        "dungeon": "cove",
         "name": "fish carcass",
         "spawn": "corridor",
-        "link-img": "assets/curio-img/cove/fish_carcass.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/cove/fish_carcass.png",
+        "actionItem": [
             {"item": "medicinal herbs", "effect": "2 gems/trinkets, 1 gems/gold, 2 food"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 16.7, "effect": "1 gem/trinkets, 1 gold/gem, 1 food" },
             { "chances": 16.7, "effect": "disease: the red plague" },
             { "chances": 11.1, "effect": "blight" },
@@ -77,25 +83,27 @@
         ]
     },
     {
+        "dungeon": "cove",
         "name": "giant oyster",
         "spawn": "room",
-        "link-img": "assets/curio-img/cove/giant_oyster.png",
-        "action-item": [
+        "linkImg": "assets/curio-img/cove/giant_oyster.png",
+        "actionItem": [
             {"item": "shovel", "effect": "3 gold/trinkets"},
             {"item": "dog treats", "effect": "+25 DODGE"}
         ],
-        "action-not-item": [
+        "actionNotItem": [
             { "chances": 40, "effect": "2 gold/trinkets" },
             { "chances": 40, "effect": "bleed" },
             { "chances": 20, "effect": "none" }
         ]
     },
     {
+        "dungeon": "cove",
         "name": "ship's figurehead",
         "spawn": "room",
-        "link-img": "assets/curio-img/cove/ships_figurehead.png",
-        "action-item": [],
-        "action-not-item": [
+        "linkImg": "assets/curio-img/cove/ships_figurehead.png",
+        "actionItem": [],
+        "actionNotItem": [
             { "chances": 66.7, "effect": "-[25-30] stress" },
             { "chances": 33.3, "effect": "+20% DMG, +4 SPD Until Camp" }
         ]
