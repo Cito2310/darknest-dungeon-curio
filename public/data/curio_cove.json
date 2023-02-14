@@ -5,12 +5,12 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/cove/barnacle_crusted_chest.png",
         "actionItem": [
-            {"item": "shovel", "effect": "3 loot"}
+            {"item": "shovel", "effect": "3 loot", "type": "loot"}
         ],
         "actionNotItem": [
-            { "chances": 50, "effect": "2 loot" },
-            { "chances": 25, "effect": "bleed" },
-            { "chances": 25, "effect": "none" }
+            { "chances": 50, "effect": "2 loot", "type": "loot" },
+            { "chances": 25, "effect": "bleed", "type": "bleed" },
+            { "chances": 25, "effect": "none", "type": "none" }
         ]
     },
     {
@@ -19,11 +19,11 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/cove/bas_relief.png",
         "actionItem": [
-            {"item": "shovel", "effect": "+100 stress"}
+            {"item": "shovel", "effect": "+100 stress", "type": "stress"}
         ],
         "actionNotItem": [
-            { "chances": 66.7, "effect": "random positive quirk" },
-            { "chances": 33.3, "effect": "negative negative quirk" }
+            { "chances": 66.7, "effect": "random positive quirk", "type": "positive quirk" },
+            { "chances": 33.3, "effect": "negative negative quirk", "type": "purge negative quirk" }
         ]
     },
     {
@@ -32,11 +32,11 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/cove/brackish_tidepool.png",
         "actionItem": [
-            {"item": "antivenom", "effect": "+5 HP/-6 stress"}
+            {"item": "antivenom", "effect": "+5 HP/-6 stress", "type": "heal"}
         ],
         "actionNotItem": [
-            { "chances": 75, "effect": "TODO" },
-            { "chances": 25, "effect": "random disease" }
+            { "chances": 75, "effect": "TODO", "type": "buff" },
+            { "chances": 25, "effect": "random disease", "type": "disease" }
         ]
     },
     {
@@ -45,12 +45,12 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/cove/eerie_coral.png",
         "actionItem": [
-            {"item": "medicinal herbs", "effect": "delete negative quirk"}
+            {"item": "medicinal herbs", "effect": "delete negative quirk", "type": "purge negative quirk"}
         ],
         "actionNotItem": [
-            { "chances": 50, "effect": "-10 stress" },
-            { "chances": 25, "effect": "+25 stress" },
-            { "chances": 25, "effect": "none" }
+            { "chances": 50, "effect": "-10 stress", "type": "heal stress" },
+            { "chances": 25, "effect": "+25 stress", "type": "stress" },
+            { "chances": 25, "effect": "none", "type": "none" }
         ]
     },
     {
@@ -59,11 +59,11 @@
         "spawn": "room",
         "linkImg": "assets/curio-img/cove/.png",
         "actionItem": [
-            {"item": "holy water", "effect": "+18 DMG Until Camp"}
+            {"item": "holy water", "effect": "+18 DMG Until Camp", "type": "buff"}
         ],
         "actionNotItem": [
-            { "chances": 50, "effect": "-25% DMG, -10 ACC Until Camp" },
-            { "chances": 50, "effect": "-12% DODGE Until Camp" }
+            { "chances": 50, "effect": "-25% DMG, -10 ACC Until Camp", "type": "debuff" },
+            { "chances": 50, "effect": "-12% DODGE Until Camp", "type": "debuff" }
         ]
     },
     {
@@ -72,14 +72,14 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/cove/fish_carcass.png",
         "actionItem": [
-            {"item": "medicinal herbs", "effect": "2 gems/trinkets, 1 gems/gold, 2 food"}
+            {"item": "medicinal herbs", "effect": "2 gems/trinkets, 1 gems/gold, 2 food", "type": "loot"}
         ],
         "actionNotItem": [
-            { "chances": 16.7, "effect": "1 gem/trinkets, 1 gold/gem, 1 food" },
-            { "chances": 16.7, "effect": "disease: the red plague" },
-            { "chances": 11.1, "effect": "blight" },
-            { "chances": 5.6, "effect": "bleed" },
-            { "chances": 50, "effect": "none" }
+            { "chances": 16.7, "effect": "1 gem/trinkets, 1 gold/gem, 1 food", "type": "loot" },
+            { "chances": 16.7, "effect": "disease: the red plague", "type": "disease" },
+            { "chances": 11.1, "effect": "blight", "type": "blight" },
+            { "chances": 5.6, "effect": "bleed", "type": "bleed" },
+            { "chances": 50, "effect": "none", "type": "none" }
         ]
     },
     {
@@ -88,13 +88,13 @@
         "spawn": "room",
         "linkImg": "assets/curio-img/cove/giant_oyster.png",
         "actionItem": [
-            {"item": "shovel", "effect": "3 gold/trinkets"},
-            {"item": "dog treats", "effect": "+25 DODGE"}
+            {"item": "shovel", "effect": "3 gold/trinkets", "type": "loot"},
+            {"item": "dog treats", "effect": "+25 DODGE", "type": "buff"}
         ],
         "actionNotItem": [
-            { "chances": 40, "effect": "2 gold/trinkets" },
-            { "chances": 40, "effect": "bleed" },
-            { "chances": 20, "effect": "none" }
+            { "chances": 40, "effect": "2 gold/trinkets", "type": "loot" },
+            { "chances": 40, "effect": "bleed", "type": "bleed" },
+            { "chances": 20, "effect": "none", "type": "none" }
         ]
     },
     {
@@ -104,8 +104,8 @@
         "linkImg": "assets/curio-img/cove/ships_figurehead.png",
         "actionItem": [],
         "actionNotItem": [
-            { "chances": 66.7, "effect": "-[25-30] stress" },
-            { "chances": 33.3, "effect": "+20% DMG, +4 SPD Until Camp" }
+            { "chances": 66.7, "effect": "-[25-30] stress", "type": "heal stress" },
+            { "chances": 33.3, "effect": "+20% DMG, +4 SPD Until Camp", "type": "buff" }
         ]
     }
 ]

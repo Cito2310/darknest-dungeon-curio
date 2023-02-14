@@ -6,8 +6,8 @@
         "linkImg": "assets/curio-img/universal/crate.png",
         "actionItem": [],
         "actionNotItem": [
-            { "chances": 75, "effect": "random loot" },
-            { "chances": 25, "effect": "none" }
+            { "chances": 75, "types": "loot", "effect": "random loot" },
+            { "chances": 25, "types": "none", "effect": "none" }
         ]
     },
     {
@@ -17,9 +17,9 @@
         "linkImg": "assets/curio-img/universal/discarted_pack.png",
         "actionItem": [],
         "actionNotItem": [
-            { "chances": 60, "effect": "1 supplies, 2 gold/gems, 1 journal entry" },
-            { "chances": 20, "effect": "get map" },
-            { "chances": 25, "effect": "none" }
+            { "chances": 60, "types": "loot", "effect": "1 supplies, 2 gold/gems, 1 journal entry" },
+            { "chances": 20, "types": "loot", "effect": "get map" },
+            { "chances": 25, "types": "none", "effect": "none" }
         ]
     },
     {
@@ -28,12 +28,12 @@
         "spawn": "room",
         "linkImg": "assets/curio-img/universal/eldritch_altar.png",
         "actionItem": [
-            {"item": "holy water", "effect": "delete negative quirk"}
+            {"item": "holy water", "types": "purge negative quirk", "effect": "delete negative quirk"}
         ],
         "actionNotItem": [
-            { "chances": 40, "effect": "+25 stress" },
-            { "chances": 10, "effect": "delete negative quirk" },
-            { "chances": 50, "effect": "none" }
+            { "chances": 40, "types": "stress", "effect": "+25 stress" },
+            { "chances": 10, "types": "purge negative quirk", "effect": "delete negative quirk" },
+            { "chances": 50, "types": "none", "effect": "none" }
         ]
     },
     {
@@ -42,13 +42,13 @@
         "spawn": "room",
         "linkImg": "assets/curio-img/universal/heirloom_chest.png",
         "actionItem": [
-            {"item": "skeleton key", "effect": "4 heirloom"},
-            {"item": "antivenom", "effect": "3 heirloom"}
+            {"item": "skeleton key", "types": "loot", "effect": "4 heirloom"},
+            {"item": "antivenom", "types": "loot", "effect": "3 heirloom"}
         ],
         "actionNotItem": [
-            { "chances": 75, "effect": "2 heirloom" },
-            { "chances": 12.5, "effect": "bleed" },
-            { "chances": 12.5, "effect": "blight" }
+            { "chances": 75, "types": "loot", "effect": "2 heirloom" },
+            { "chances": 12.5, "types": "bleed", "effect": "bleed" },
+            { "chances": 12.5, "types": "blight", "effect": "blight" }
         ]
     },
     {
@@ -58,8 +58,8 @@
         "linkImg": "assets/curio-img/universal/sack.png",
         "actionItem": [],
         "actionNotItem": [
-            { "chances": 75, "effect": "1 gold" },
-            { "chances": 25, "effect": "none" }
+            { "chances": 75, "types": "loot", "effect": "1 gold" },
+            { "chances": 25, "types": "none", "effect": "none" }
         ]
     },
     {
@@ -69,7 +69,7 @@
         "linkImg": "assets/curio-img/universal/sconce.png",
         "actionItem": [],
         "actionNotItem": [
-            { "chances": 100, "effect": "1 torch, random loot" }
+            { "chances": 100, "types": "torch", "effect": "1 torch, random loot" }
         ]
     },
     {
@@ -78,10 +78,10 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/universal/shamblers_altar.png",
         "actionItem": [
-            {"item": "torch", "effect": "summon shambler"}
+            {"item": "torch", "types": "summon", "effect": "summon shambler"}
         ],
         "actionNotItem": [
-            { "chances": 100, "effect": "none" }
+            { "chances": 100, "types": "none", "effect": "none" }
         ]
     },
     {
@@ -90,15 +90,15 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/universal/stack_of_books.png",
         "actionItem": [
-            {"item": "torch", "effect": "+100 stress"}
+            {"item": "torch", "types": "stress", "effect": "+100 stress"}
         ],
         "actionNotItem": [
-            { "chances": 22.2, "effect": "+25 stress" },
-            { "chances": 22.2, "effect": "random positive quirk" },
-            { "chances": 11.1, "effect": "random negative quirk" },
-            { "chances": 11.1, "effect": "-25 light meter" },
-            { "chances": 16.7, "effect": "1 journal entry" },
-            { "chances": 16.7, "effect": "none" }
+            { "chances": 22.2, "types": "stress", "effect": "+25 stress" },
+            { "chances": 22.2, "types": "quirk positive", "effect": "random positive quirk" },
+            { "chances": 11.1, "types": "quirk negative", "effect": "random negative quirk" },
+            { "chances": 11.1, "types": "torch", "effect": "-25 light meter" },
+            { "chances": 16.7, "types": "loot", "effect": "1 journal entry" },
+            { "chances": 16.7, "types": "none", "effect": "none" }
         ]
     },
     {
@@ -108,8 +108,8 @@
         "linkImg": "assets/curio-img/universal/unlocked_strongbox.png",
         "actionItem": [],
         "actionNotItem": [
-            { "chances": 75, "effect": "2 loot" },
-            { "chances": 25, "effect": "blight" }
+            { "chances": 75, "types": "loot", "effect": "2 loot" },
+            { "chances": 25, "types": "blight", "effect": "blight" }
         ]
     }
 ]

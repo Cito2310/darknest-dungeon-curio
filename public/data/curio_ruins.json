@@ -5,13 +5,13 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/ruins/alchemy_table.png",
         "actionItem": [
-            {"item": "torch", "effect": "+100 light meter"},
-            {"item": "medicinal herbs", "effect": "2 gold/gems"}
+            {"item": "torch", "type": "torch", "effect": "+100 light meter"},
+            {"item": "medicinal herbs", "type": "loot", "effect": "2 gold/gems"}
         ],
         "actionNotItem": [
-            { "chances": 50, "effect": "blight" },
-            { "chances": 25, "effect": "1 gold/gems" },
-            { "chances": 25, "effect": "none" }
+            { "chances": 50, "type": "blight", "effect": "blight" },
+            { "chances": 25, "type": "loot", "effect": "1 gold/gems" },
+            { "chances": 25, "type": "none", "effect": "none" }
         ]
     },
     {
@@ -20,10 +20,10 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/ruins/altar_of_light.png",
         "actionItem": [
-            {"item": "holy water", "effect": "+30% DMG Until Camp"}
+            {"item": "holy water", "type": "buff", "effect": "+30% DMG Until Camp"}
         ],
         "actionNotItem": [
-            { "chances": 100, "effect": "+20% DMG Until Camp" }
+            { "chances": 100, "type": "buff", "effect": "+20% DMG Until Camp" }
         ]
     },
     {
@@ -33,12 +33,12 @@
         "linkImg": "assets/curio-img/ruins/bookshelf.png",
         "actionItem": [],
         "actionNotItem": [
-            { "chances": 20, "effect": "map" },
-            { "chances": 20, "effect": "+15 stress" },
-            { "chances": 13.3, "effect": "random positive quirk" },
-            { "chances": 6.7, "effect": "random negative quirk" },
-            { "chances": 20, "effect": "1 journal entry" },
-            { "chances": 20, "effect": "none" }
+            { "chances": 20, "type": "torch", "effect": "map" },
+            { "chances": 20, "type": "stress", "effect": "+15 stress" },
+            { "chances": 13.3, "type": "quirk positive", "effect": "random positive quirk" },
+            { "chances": 6.7, "type": "quirk negative", "effect": "random negative quirk" },
+            { "chances": 20, "type": "loot", "effect": "1 journal entry" },
+            { "chances": 20, "type": "none", "effect": "none" }
         ]
     },
     {
@@ -47,12 +47,12 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/ruins/confession_booth.png",
         "actionItem": [
-            {"item": "holy water", "effect": "-30 stress"}
+            {"item": "holy water", "type": "heal stress", "effect": "-30 stress"}
         ],
         "actionNotItem": [
-            { "chances": 50, "effect": "+15 stress" },
-            { "chances": 25, "effect": "6 gold/trinket, 1 journal entry" },
-            { "chances": 25, "effect": "delete negative quirk" }
+            { "chances": 50, "type": "stress", "effect": "+15 stress" },
+            { "chances": 25, "type": "loot", "effect": "6 gold/trinket, 1 journal entry" },
+            { "chances": 25, "type": "purge negative quirk", "effect": "delete negative quirk" }
         ]
     },
     {
@@ -61,15 +61,15 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/ruins/decorative_urn.png",
         "actionItem": [
-            {"item": "holy water", "effect": "2 gems/trinket, 2 gems"},
-            {"item": "shovel", "effect": "negative quirk: guilty conscience"}
+            {"item": "holy water", "type": "loot", "effect": "2 gems/trinket, 2 gems"},
+            {"item": "shovel", "type": "quirk negative", "effect": "negative quirk: guilty conscience"}
         ],
         "actionNotItem": [
-            { "chances": 44.4, "effect": "1 gems/trinket, 2 gems" },
-            { "chances": 22.2, "effect": "blight" },
-            { "chances": 7.4, "effect": "disease: creeping cough" },
-            { "chances": 3.7, "effect": "random disease" },
-            { "chances": 22.2, "effect": "none" }
+            { "chances": 44.4, "type": "loot", "effect": "1 gems/trinket, 2 gems" },
+            { "chances": 22.2, "type": "blight", "effect": "blight" },
+            { "chances": 7.4, "type": "disease", "effect": "disease: creeping cough" },
+            { "chances": 3.7, "type": "disease", "effect": "random disease" },
+            { "chances": 22.2, "type": "none", "effect": "none" }
         ]
     },
     {
@@ -78,11 +78,11 @@
         "spawn": "room",
         "linkImg": "assets/curio-img/ruins/holy_fountain.png",
         "actionItem": [
-            {"item": "holy water", "effect": "-20 stress, +12 HP, cure status effects"}
+            {"item": "holy water", "type": "heal", "effect": "-20 stress, +12 HP, cure status effects"}
         ],
         "actionNotItem": [
-            { "chances": 50, "effect": "-10 stress, +5 HP, cure status effects" },
-            { "chances": 50, "effect": "2 gold/gems" }
+            { "chances": 50, "type": "heal", "effect": "-10 stress, +5 HP, cure status effects" },
+            { "chances": 50, "type": "loot", "effect": "2 gold/gems" }
         ]
     },
     {
@@ -91,14 +91,14 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/ruins/iron_maiden.png",
         "actionItem": [
-            {"item": "medicinal herbs", "effect": "2 loot"}
+            {"item": "medicinal herbs", "type": "loot", "effect": "2 loot"}
         ],
         "actionNotItem": [
-            { "chances": 40, "effect": "2 loot" },
-            { "chances": 20, "effect": "claustrophobia" },
-            { "chances": 13.3, "effect": "disease: tetanus" },
-            { "chances": 6.7, "effect": "random disease" },
-            { "chances": 20, "effect": "none" }
+            { "chances": 40, "type": "loot", "effect": "2 loot" },
+            { "chances": 20, "type": "quirk negative", "effect": "claustrophobia" },
+            { "chances": 13.3, "type": "disease", "effect": "disease: tetanus" },
+            { "chances": 6.7, "type": "disease", "effect": "random disease" },
+            { "chances": 20, "type": "none", "effect": "none" }
         ]
     },
     {
@@ -107,12 +107,12 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/ruins/locked_display_cabinet.png",
         "actionItem": [
-            {"item": "skeleton key", "effect": "3 gold/heirlooms, 2 gold/gems"},
-            {"item": "shovel", "effect": "2 gold/heirlooms, 2 gold/gems"}
+            {"item": "skeleton key", "type": "loot", "effect": "3 gold/heirlooms, 2 gold/gems"},
+            {"item": "shovel", "type": "loot", "effect": "2 gold/heirlooms, 2 gold/gems"}
         ],
         "actionNotItem": [
-            { "chances": 50, "effect": "bleed" },
-            { "chances": 50, "effect": "blight" }
+            { "chances": 50, "type": "bleed", "effect": "bleed" },
+            { "chances": 50, "type": "blight", "effect": "blight" }
         ]
     },
     {
@@ -121,12 +121,12 @@
         "spawn": "room",
         "linkImg": "assets/curio-img/ruins/locked_sarcophagus.png",
         "actionItem": [
-            {"item": "skeleton key", "effect": "2 gold/heirlooms, 1 gold/trinket"},
-            {"item": "shovel", "effect": "1 gold/heirlooms, 1 gold/trinket"}
+            {"item": "skeleton key", "type": "loot", "effect": "2 gold/heirlooms, 1 gold/trinket"},
+            {"item": "shovel", "type": "loot", "effect": "1 gold/heirlooms, 1 gold/trinket"}
         ],
         "actionNotItem": [
-            { "chances": 50, "effect": "bleed" },
-            { "chances": 50, "effect": "blight" }
+            { "chances": 50, "type": "bleed", "effect": "bleed" },
+            { "chances": 50, "type": "blight", "effect": "blight" }
         ]
     },
     {
@@ -136,9 +136,9 @@
         "linkImg": "assets/curio-img/ruins/sarcophagus.png",
         "actionItem": [],
         "actionNotItem": [
-            { "chances": 60, "effect": "2 gold/heirlooms" },
-            { "chances": 20, "effect": "negative quirk: thanatophobia" },
-            { "chances": 20, "effect": "none" }
+            { "chances": 60, "type": "loot", "effect": "2 gold/heirlooms" },
+            { "chances": 20, "type": "disease", "effect": "negative quirk: thanatophobia" },
+            { "chances": 20, "type": "none", "effect": "none" }
         ]
     },
     {
@@ -148,9 +148,9 @@
         "linkImg": "assets/curio-img/ruins/suit_of_armor.png",
         "actionItem": [],
         "actionNotItem": [
-            { "chances": 75, "effect": "+15% PROT/+10% DODGE Until Camp" },
-            { "chances": 12.5, "effect": "positive quirk: ruins adventurer" },
-            { "chances": 12.5, "effect": "positive quirk: ruins tactician" }
+            { "chances": 75, "type": "buff", "effect": "+15% PROT/+10% DODGE Until Camp" },
+            { "chances": 12.5, "type": "quirk positive", "effect": "positive quirk: ruins adventurer" },
+            { "chances": 12.5, "type": "quirk positive", "effect": "positive quirk: ruins tactician" }
         ]
     }
 ]

@@ -9,12 +9,14 @@ export interface ICurio {
 
 export interface IActionItem { 
     item: TSupplies, 
-    effect: string
+    effect: string,
+    type: TType,
 }
 
 export interface IActionNotItem { 
     chances: number, 
-    effect: string
+    effect: string,
+    type: TType,
 }
 
 export type TSupplies = "medicinal herbs" 
@@ -27,3 +29,20 @@ export type TSupplies = "medicinal herbs"
                 | "skeleton key"
 
 export type TDungeon = "cove" | "ruins" | "universal" | "warrens" | "weald"
+
+export type TType = "bleed"
+                    | "blight"
+                    | "buff"
+                    | "debuff"
+                    | "disease"
+                    | "heal stress"
+                    | "heal"
+                    | "loot"
+                    | "none"
+                    | "purge negative quirk"
+                    | "purge positive quirk"
+                    | "quirk negative"
+                    | "quirk positive"
+                    | "stress"
+                    | "summon"
+                    | "torch"
