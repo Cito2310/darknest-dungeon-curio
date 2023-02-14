@@ -16,7 +16,7 @@ export interface IActionItem {
 export interface IActionNotItem { 
     chances: number, 
     effect: string,
-    type: TType,
+    types: TType,
 }
 
 export type TSupplies = "medicinal herbs" 
