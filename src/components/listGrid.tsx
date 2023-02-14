@@ -1,19 +1,28 @@
 import { useEffect, useState } from "react"
 
-import { ICurio } from '../types/curio';
+import { ICurio, TDungeon } from '../types/curio';
 
 import "../styles/list-grid.scss"
-import { ContainerActionItem } from './containerActionItem';
-import { ContainerActionNotItem } from './containerActionNotItem';
-import { ContainerNameImg } from "./containerNameImg";
+import { ContainerActionItem } from './ContainerActionItem';
+import { ContainerActionNotItem } from './ContainerActionNotItem';
+import { ContainerNameImg } from "./ContainerNameImg";
+import { routeDungeon } from '../helpers/routeDungeon';
 
-export const ListGrid = () => {
+interface props {
+    dungeon: TDungeon
+}
+
+export const ListGrid = ({ dungeon }: props) => {
     const [dataCurio, setDataCurio] = useState<[] | ICurio[]>([])
 
     // function get data curio
     useEffect(()=>{
-        fetch("data/curio_universal.json").then(resp => {
-            resp.text().then((text)=> { setDataCurio(JSON.parse(text)) })
+        Promise.all([
+            fetch(routeDungeon.universal).then(resp => resp.json()),
+            fetch(routeDungeon[dungeon]).then(resp => resp.json()),
+        ]).then(( arrayData: ICurio[][] ) => {
+            const allCurios = arrayData.reduce(( prev, curr )=> [...prev, ...curr] ,[]);
+            setDataCurio( allCurios );
         })
     }, [])
 

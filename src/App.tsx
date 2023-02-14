@@ -1,21 +1,18 @@
-import "./config.scss"
-
 import { Routes, Route, Navigate } from "react-router-dom";
-import { CoveScreen } from './screens/coveScreen';
-import { WarrensScreen } from "./screens/warrensScreen";
-import { WealdScreen } from "./screens/wealdScreen";
-import { RuinsScreen } from './screens/ruinsScreen';
+
+import { AppDungeonLayout } from './components/AppDungeonLayout';
 
 import "./styles/background-image.scss"
+import "./config.scss"
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/cove" element={ <CoveScreen/> } />
-        <Route path="/ruins" element={ <RuinsScreen/> } />
-        <Route path="/warrens" element={ <WarrensScreen/> } />
-        <Route path="/weald" element={ <WealdScreen/> } />
+        <Route path="/cove" element={ <AppDungeonLayout dungeon="cove"/> } />
+        <Route path="/ruins" element={ <AppDungeonLayout dungeon="ruins"/> } />
+        <Route path="/warrens" element={ <AppDungeonLayout dungeon="warrens"/> } />
+        <Route path="/weald" element={ <AppDungeonLayout dungeon="weald"/> } />
 
         <Route path="/*" element={<Navigate to={"/ruins"} />} />
         <Route path="/" element={<Navigate to={"/ruins"} />} />
