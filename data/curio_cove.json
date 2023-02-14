@@ -1,0 +1,111 @@
+[
+    {
+        "dungeon": "cove",
+        "name": "barnacle crusted chest",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/cove/barnacle_crusted_chest.png",
+        "actionItem": [
+            {"item": "shovel", "effect": "3 loot", "type": "loot"}
+        ],
+        "actionNotItem": [
+            { "chances": 50, "effect": "2 loot", "type": "loot" },
+            { "chances": 25, "effect": "bleed", "type": "bleed" },
+            { "chances": 25, "effect": "none", "type": "none" }
+        ]
+    },
+    {
+        "dungeon": "cove",
+        "name": "bas relief",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/cove/bas_relief.png",
+        "actionItem": [
+            {"item": "shovel", "effect": "+100 stress", "type": "stress"}
+        ],
+        "actionNotItem": [
+            { "chances": 66.7, "effect": "random positive quirk", "type": "quirk positive" },
+            { "chances": 33.3, "effect": "negative negative quirk", "type": "purge negative quirk" }
+        ]
+    },
+    {
+        "dungeon": "cove",
+        "name": "brackish tide pool",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/cove/brackish_tidepool.png",
+        "actionItem": [
+            {"item": "antivenom", "effect": "+5 HP/-6 stress", "type": "heal"}
+        ],
+        "actionNotItem": [
+            { "chances": 75, "effect": "TODO", "type": "buff" },
+            { "chances": 25, "effect": "random disease", "type": "disease" }
+        ]
+    },
+    {
+        "dungeon": "cove",
+        "name": "eerie coral",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/cove/eerie_coral.png",
+        "actionItem": [
+            {"item": "medicinal herbs", "effect": "delete negative quirk", "type": "purge negative quirk"}
+        ],
+        "actionNotItem": [
+            { "chances": 50, "effect": "-10 stress", "type": "heal stress" },
+            { "chances": 25, "effect": "+25 stress", "type": "stress" },
+            { "chances": 25, "effect": "none", "type": "none" }
+        ]
+    },
+    {
+        "dungeon": "cove",
+        "name": "fish idol",
+        "spawn": "room",
+        "linkImg": "assets/curio-img/cove/fish_idol.png",
+        "actionItem": [
+            {"item": "holy water", "effect": "+18 DMG Until Camp", "type": "buff"}
+        ],
+        "actionNotItem": [
+            { "chances": 50, "effect": "-25% DMG, -10 ACC Until Camp", "type": "debuff" },
+            { "chances": 50, "effect": "-12% DODGE Until Camp", "type": "debuff" }
+        ]
+    },
+    {
+        "dungeon": "cove",
+        "name": "fish carcass",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/cove/fish_carcass.png",
+        "actionItem": [
+            {"item": "medicinal herbs", "effect": "2 gems/trinkets, 1 gems/gold, 2 food", "type": "loot"}
+        ],
+        "actionNotItem": [
+            { "chances": 16.7, "effect": "1 gem/trinkets, 1 gold/gem, 1 food", "type": "loot" },
+            { "chances": 16.7, "effect": "disease: the red plague", "type": "disease" },
+            { "chances": 11.1, "effect": "blight", "type": "blight" },
+            { "chances": 5.6, "effect": "bleed", "type": "bleed" },
+            { "chances": 50, "effect": "none", "type": "none" }
+        ]
+    },
+    {
+        "dungeon": "cove",
+        "name": "giant oyster",
+        "spawn": "room",
+        "linkImg": "assets/curio-img/cove/giant_oyster.png",
+        "actionItem": [
+            {"item": "shovel", "effect": "3 gold/trinkets", "type": "loot"},
+            {"item": "dog treats", "effect": "+25 DODGE", "type": "buff"}
+        ],
+        "actionNotItem": [
+            { "chances": 40, "effect": "2 gold/trinkets", "type": "loot" },
+            { "chances": 40, "effect": "bleed", "type": "bleed" },
+            { "chances": 20, "effect": "none", "type": "none" }
+        ]
+    },
+    {
+        "dungeon": "cove",
+        "name": "ship's figurehead",
+        "spawn": "room",
+        "linkImg": "assets/curio-img/cove/ships_figurehead.png",
+        "actionItem": [],
+        "actionNotItem": [
+            { "chances": 66.7, "effect": "-[25-30] stress", "type": "heal stress" },
+            { "chances": 33.3, "effect": "+20% DMG, +4 SPD Until Camp", "type": "buff" }
+        ]
+    }
+]

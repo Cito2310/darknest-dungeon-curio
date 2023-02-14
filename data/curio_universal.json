@@ -1,0 +1,115 @@
+[
+    {
+        "dungeon": "universal",
+        "name": "crate",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/universal/crate.png",
+        "actionItem": [],
+        "actionNotItem": [
+            { "chances": 75, "type": "loot", "effect": "random loot" },
+            { "chances": 25, "type": "none", "effect": "none" }
+        ]
+    },
+    {
+        "dungeon": "universal",
+        "name": "discarted pack",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/universal/discarted_pack.png",
+        "actionItem": [],
+        "actionNotItem": [
+            { "chances": 60, "type": "loot", "effect": "1 supplies, 2 gold/gems, 1 journal entry" },
+            { "chances": 20, "type": "loot", "effect": "get map" },
+            { "chances": 25, "type": "none", "effect": "none" }
+        ]
+    },
+    {
+        "dungeon": "universal",
+        "name": "eldritch altar",
+        "spawn": "room",
+        "linkImg": "assets/curio-img/universal/eldritch_altar.png",
+        "actionItem": [
+            {"item": "holy water", "type": "purge negative quirk", "effect": "delete negative quirk"}
+        ],
+        "actionNotItem": [
+            { "chances": 40, "type": "stress", "effect": "+25 stress" },
+            { "chances": 10, "type": "purge negative quirk", "effect": "delete negative quirk" },
+            { "chances": 50, "type": "none", "effect": "none" }
+        ]
+    },
+    {
+        "dungeon": "universal",
+        "name": "heirloom chest",
+        "spawn": "room",
+        "linkImg": "assets/curio-img/universal/heirloom_chest.png",
+        "actionItem": [
+            {"item": "skeleton key", "type": "loot", "effect": "4 heirloom"},
+            {"item": "antivenom", "type": "loot", "effect": "3 heirloom"}
+        ],
+        "actionNotItem": [
+            { "chances": 75, "type": "loot", "effect": "2 heirloom" },
+            { "chances": 12.5, "type": "bleed", "effect": "bleed" },
+            { "chances": 12.5, "type": "blight", "effect": "blight" }
+        ]
+    },
+    {
+        "dungeon": "universal",
+        "name": "sack",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/universal/sack.png",
+        "actionItem": [],
+        "actionNotItem": [
+            { "chances": 75, "type": "loot", "effect": "1 gold" },
+            { "chances": 25, "type": "none", "effect": "none" }
+        ]
+    },
+    {
+        "dungeon": "universal",
+        "name": "sconce",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/universal/sconce.png",
+        "actionItem": [],
+        "actionNotItem": [
+            { "chances": 100, "type": "torch", "effect": "1 torch, random loot" }
+        ]
+    },
+    {
+        "dungeon": "universal",
+        "name": "shambler's altar",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/universal/shamblers_altar.png",
+        "actionItem": [
+            {"item": "torch", "type": "summon", "effect": "summon shambler"}
+        ],
+        "actionNotItem": [
+            { "chances": 100, "type": "none", "effect": "none" }
+        ]
+    },
+    {
+        "dungeon": "universal",
+        "name": "stack of books",
+        "spawn": "corridor",
+        "linkImg": "assets/curio-img/universal/stack_of_books.png",
+        "actionItem": [
+            {"item": "torch", "type": "stress", "effect": "+100 stress"}
+        ],
+        "actionNotItem": [
+            { "chances": 22.2, "type": "stress", "effect": "+25 stress" },
+            { "chances": 22.2, "type": "quirk positive", "effect": "random positive quirk" },
+            { "chances": 11.1, "type": "quirk negative", "effect": "random negative quirk" },
+            { "chances": 11.1, "type": "torch", "effect": "-25 light meter" },
+            { "chances": 16.7, "type": "loot", "effect": "1 journal entry" },
+            { "chances": 16.7, "type": "none", "effect": "none" }
+        ]
+    },
+    {
+        "dungeon": "universal",
+        "name": "unlocked strongbox",
+        "spawn": "room",
+        "linkImg": "assets/curio-img/universal/unlocked_strongbox.png",
+        "actionItem": [],
+        "actionNotItem": [
+            { "chances": 75, "type": "loot", "effect": "2 loot" },
+            { "chances": 25, "type": "blight", "effect": "blight" }
+        ]
+    }
+]
