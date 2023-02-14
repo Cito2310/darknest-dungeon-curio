@@ -5,6 +5,7 @@ import { ICurio } from '../types/curio';
 import "../styles/list-grid.scss"
 import { ContainerActionItem } from './containerActionItem';
 import { ContainerActionNotItem } from './containerActionNotItem';
+import { ContainerNameImg } from "./containerNameImg";
 
 export const ListGridDev = () => {
     const [dataCurio, setDataCurio] = useState<[] | ICurio[]>([])
@@ -23,21 +24,16 @@ export const ListGridDev = () => {
             })
     }, [])
 
-    const capitalizeText = ( value: string ) => {
-        const words: string[] = value.split(" ");
-        const capitalize = words.map( word => word[0].toLocaleUpperCase() + word.slice(1) )
-        
-        return capitalize.join(" ")
-    }
-
     return (
         <section className="list-curio">
             {
                 dataCurio.map( curio => <div className="item-curio-container">
                     <div className="item-curio-column">
-                        <img className="item-curio-img" src={curio.linkImg}/>
-                        <p className="item-curio-name">{ capitalizeText(curio.name) }</p>
-                        <p className="item-curio-spawn">{ capitalizeText(curio.spawn) }</p>
+                        <ContainerNameImg 
+                                linkImg={curio.linkImg}
+                                name={curio.name}
+                                spawn={curio.spawn}
+                            />
                     </div>
 
                     <div className="item-curio-column">

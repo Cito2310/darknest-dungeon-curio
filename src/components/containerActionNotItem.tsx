@@ -15,7 +15,7 @@ export const ContainerActionNotItem = ({ actionNotItem }: props) => {
             {
                 actionNotItem.map(({ chances, effect, type })=><li>
                     <p className="text-chances">{`${chances}%`}</p>
-                    <img src={routeEffects[type]}/>
+                    <img className="img-effect" src={routeEffects[type]}/>
                     <p className="text-effect">{effect}</p>
                 </li>)
             }

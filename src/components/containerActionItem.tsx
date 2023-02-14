@@ -16,7 +16,7 @@ export const ContainerActionItem = ({ actionItems }: props) => {
                 ? <img className="img-empty" src="assets/pass.png"/>
                 : actionItems.map( actionItem => (<li>
                     <img className="img-supplies" src={routeItems[actionItem.item]}></img>
-                    <p>{actionItem.effect}</p>
+                    <p className="text-effect">{actionItem.effect}</p>
                 </li>))
             }
         </ul>
