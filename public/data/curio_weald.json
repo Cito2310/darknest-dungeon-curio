@@ -34,7 +34,7 @@
         "spawn": "corridor",
         "linkImg": "assets/curio-img/weald/eerie_spiderweb.png",
         "actionItem": [
-            {"item": "bandages", "type": "loot", "effect": "2 gold/gems, 1 gems/trinket"}
+            {"item": "bandage", "type": "loot", "effect": "2 gold/gems, 1 gems/trinket"}
         ],
         "actionNotItem": [
             { "chances": 40, "type": "loot", "effect": "1 gold/gems, 1 gems/trinket" },
@@ -61,9 +61,9 @@
         "dungeon": "weald",
         "name": "mummified remains",
         "spawn": "corridor",
-        "linkImg": "assets/curio-img/weald/.png",
+        "linkImg": "assets/curio-img/weald/rotting_corpse.png",
         "actionItem": [
-            {"item": "bandages", "type": "loot", "effect": "2 gold/trinket"}
+            {"item": "bandage", "type": "loot", "effect": "2 gold/trinket"}
         ],
         "actionNotItem": [
             { "chances": 40, "type": "loot", "effect": "1 gold/trinket" },

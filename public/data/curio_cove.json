@@ -15,14 +15,14 @@
     },
     {
         "dungeon": "cove",
-        "name": "bas-relief",
+        "name": "bas relief",
         "spawn": "corridor",
         "linkImg": "assets/curio-img/cove/bas_relief.png",
         "actionItem": [
             {"item": "shovel", "effect": "+100 stress", "type": "stress"}
         ],
         "actionNotItem": [
-            { "chances": 66.7, "effect": "random positive quirk", "type": "positive quirk" },
+            { "chances": 66.7, "effect": "random positive quirk", "type": "quirk positive" },
             { "chances": 33.3, "effect": "negative negative quirk", "type": "purge negative quirk" }
         ]
     },
@@ -57,7 +57,7 @@
         "dungeon": "cove",
         "name": "fish idol",
         "spawn": "room",
-        "linkImg": "assets/curio-img/cove/.png",
+        "linkImg": "assets/curio-img/cove/fish_idol.png",
         "actionItem": [
             {"item": "holy water", "effect": "+18 DMG Until Camp", "type": "buff"}
         ],

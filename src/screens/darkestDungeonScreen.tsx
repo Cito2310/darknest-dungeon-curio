@@ -1,3 +1,4 @@
+import { ListGridDev } from "../components/listGridDev"
 import { NavBar } from "../components/navBar"
 
 export const DarkestDungeonScreen = () => {
@@ -7,7 +8,7 @@ export const DarkestDungeonScreen = () => {
       style={{backgroundImage: `url(assets/background-img/loading_screen_darkestdungeon.png)`}}
     >
       <NavBar/>
-      darkestDungeonScreen
+      <ListGridDev/>
     </section>
   )
 }
