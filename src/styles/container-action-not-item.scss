@@ -1,0 +1,24 @@
+.container-action-not-item {
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+
+    li {
+        display: grid;
+        grid-template-columns: 1fr  30px 5fr;
+        gap: 0.8em;
+
+        p, img {
+            margin: auto 0;
+        }
+
+        .text-chances {
+            font-size: 1.2em;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

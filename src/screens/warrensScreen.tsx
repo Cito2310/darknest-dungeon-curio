@@ -1,13 +1,16 @@
 import { NavBar } from "../components/navBar"
+import { ListGrid } from '../components/listGrid';
 
 export const WarrensScreen = () => {
   return (
-    <section 
+    <div 
       className="background-image" 
       style={{backgroundImage: `url(assets/background-img/loading_screen_warrens.png)`}}
     >
+
       <NavBar/>
-      warrensScreen
-    </section>
+      <ListGrid/>
+
+    </div>
   )
 }

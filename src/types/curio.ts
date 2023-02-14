@@ -3,25 +3,27 @@ export interface ICurio {
     name: string,
     spawn: "room" | "corridor",
     linkImg: string,
-    actionItem: IActionItem[],
+    actionItem: IActionItem[] | [],
     actionNotItem: IActionNotItem[]
 }
 
-interface IActionItem { 
+export interface IActionItem { 
     item: TSupplies, 
     effect: string
 }
 
-interface IActionNotItem { 
+export interface IActionNotItem { 
     chances: number, 
     effect: string
 }
 
-type TSupplies = "medicinal herbs" 
-                | "bandages"
+export type TSupplies = "medicinal herbs" 
+                | "bandage"
                 | "antivenom"
-                | "sholves"
+                | "shovel"
                 | "dog treats"
                 | "torch"
+                | "holy water"
+                | "skeleton key"
 
-type TDungeon = "cove" | "ruins" | "universal" | "warrens" | "weald"
+export type TDungeon = "cove" | "ruins" | "universal" | "warrens" | "weald"

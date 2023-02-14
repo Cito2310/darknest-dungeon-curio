@@ -1,0 +1,16 @@
+.container-action-item {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    
+    li {
+        display: flex;
+        flex-direction: column;
+
+        .img-supplies {
+            margin: auto;
+            height: 100px;
+            object-fit: contain;        
+        }
+    }
+}

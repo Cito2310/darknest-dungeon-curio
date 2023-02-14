@@ -1,0 +1,41 @@
+.list-curio {
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    border: 1px rgba(255, 255, 255, 0.02) solid;
+    margin: 1.2em 2em;
+    padding: 1.2em 1.6em;
+}
+
+.item-curio-container {
+    p {all: unset; display: block; color: white;}
+    
+    display: grid;
+    grid-template-columns: 1.3fr 3fr 3fr;
+    gap: 2em;
+
+    .item-curio-column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-curio-img {
+        height: 150px;
+        object-fit: contain;
+        width: 100%;
+    }
+    .item-curio-name {
+        font-size: 1.4em;
+        font-weight: 600;
+        text-align: center;
+    }
+    .item-curio-spawn {
+        font-size: 0.9em;
+        text-align: center;
+    }
+
+    .item-curio-empty {
+        margin: auto;
+    }
+}
