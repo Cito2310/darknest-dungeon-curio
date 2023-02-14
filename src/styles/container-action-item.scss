@@ -1,16 +1,23 @@
+ul {all:unset;}
+
 .container-action-item {
     display: flex;
     flex-direction: row;
     margin: auto;
     
     li {
+        all: unset;
         display: flex;
+        width: 120px;
         flex-direction: column;
+        text-align: center;
+        gap: 0.3em;
 
         .img-supplies {
-            margin: auto;
+            margin: 0 auto;
             height: 100px;
             object-fit: contain;        
         }
+
     }
 }

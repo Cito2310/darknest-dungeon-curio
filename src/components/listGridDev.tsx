@@ -28,23 +28,15 @@ export const ListGridDev = () => {
         <section className="list-curio">
             {
                 dataCurio.map( curio => <div className="item-curio-container">
-                    <div className="item-curio-column">
-                        <ContainerNameImg 
-                                linkImg={curio.linkImg}
-                                name={curio.name}
-                                spawn={curio.spawn}
-                            />
-                    </div>
+                    <ContainerNameImg 
+                            linkImg={curio.linkImg}
+                            name={curio.name}
+                            spawn={curio.spawn}
+                        />
 
-                    <div className="item-curio-column">
-                        <ContainerActionItem actionItems={curio.actionItem} />
-                    </div>
+                    <ContainerActionItem actionItems={curio.actionItem} />
 
-                    <div className="item-curio-column">
-                        <ContainerActionNotItem actionNotItem={ curio.actionNotItem }/>
-                    </div>
-
-
+                    <ContainerActionNotItem actionNotItem={ curio.actionNotItem }/>
                 </div>)
             }
         </section>
